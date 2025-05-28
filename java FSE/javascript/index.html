@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Community Event Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="pageLoaded()">
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <h1>Welcome to the Community Portal</h1>
+    <p>Discover, join and contribute to your local events!</p>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <div id="eventList" class="event-container"></div>
+  </section>
+
+  <!-- Register -->
+  <section id="register">
+    <h2>Register for an Event</h2>
+    <form id="registerForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <select name="event" id="eventDropdown"></select>
+      <button type="submit" id="registerBtn">Register</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
