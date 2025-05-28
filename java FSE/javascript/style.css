@@ -1,0 +1,130 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0f7fa;
+  color: #2e3c43;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #00796b;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffab91;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Event Cards */
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.event-card {
+  background-color: #ffab91;
+  border: 2px solid #00796b;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 250px;
+  color: #2e3c43;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  margin: 0.25rem 0;
+}
+
+.event-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #ff7043;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event-card button:hover {
+  background-color: #f4511e;
+}
+
+/* Registration Form */
+form {
+  background-color: #fbe9e7;
+  border: 1px solid #ff7043;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form select,
+form button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #004d40;
+}
+
+/* Form Message */
+#formMessage {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #00796b;
+}
