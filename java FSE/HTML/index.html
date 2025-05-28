@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Community Event Portal</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>Navigation</h2>
+    <a href="#home">Home</a> |
+    <a href="#events">Events</a> |
+    <a href="#contact">Contact</a> |
+    <a href="help.html" target="_blank">Help</a>
+  </nav>
+
+  <!-- Welcome Banner -->
+  <div id="welcomeBanner">
+    <h1>Welcome to the Local Community Event Portal</h1>
+    <p><span style="color: red; font-weight: bold;">Special Offer!</span> Sign up for a free workshop.</p>
+    <p class="highlight">Don’t miss our upcoming summer events.</p>
+  </div>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Home</h2>
+      <p>This portal allows residents to register for events, view event locations, and access community services.</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+      <h2>Events</h2>
+
+      <!-- Image Gallery -->
+      <table border="1">
+        <caption>Past Community Events</caption>
+        <tr>
+          <td><img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?cs=srgb&dl=pexels-wendywei-1190297.jpg&fm=jpg" alt="Music Fest" title="Music Fest" width="150"></td>
+          <td><img src="https://images.pexels.com/photos/1671014/pexels-photo-1671014.jpeg?cs=srgb&dl=pexels-myatezhny39-1671014.jpg&fm=jpg" alt="Art Show" title="Art Show" width="150"></td>
+          <td><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/food-festival%2Cretail%2Cevent%2C-menu-design-template-7a26f1d86ffac8f58db035ef1c2147a3_screen.jpg?ts=1698348768" alt="Food Fair" title="Food Fair" width="150"></td>
+        </tr>
+        <tr>
+          <td><img src="https://image-timescontent.timesgroup.com/thumb/516051.webp" alt="Parade" title="Parade" width="150"></td>
+          <td><img src="https://miro.medium.com/v2/resize:fit:1400/1*xbLaRmc3j2ksO_cMd9MbtQ.jpeg" alt="Workshop" title="Workshop" width="150"></td>
+          <td><img src="https://www.asterhospitals.in/sites/default/files/styles/webp/public/2024-03/marathon.jpg.webp?itok=cE-XHbHj" alt="Marathon" title="Marathon" width="150"></td>
+        </tr>
+      </table>
+
+      <!-- Event Registration Form -->
+      <h3>Register for an Event</h3>
+      <form>
+        <p>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" placeholder="Enter your name" required autofocus>
+        </p>
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+          <label for="date">Event Date:</label><br>
+          <input type="date" id="date" required>
+        </p>
+        <p>
+          <label for="eventType">Event Type:</label><br>
+          <select id="eventType" required>
+            <option value="">Select an event</option>
+            <option value="music">Music</option>
+            <option value="art">Art</option>
+            <option value="sports">Sports</option>
+          </select>
+        </p>
+        <p>
+          <label for="message">Message:</label><br>
+          <textarea id="message" placeholder="Your message here"></textarea>
+        </p>
+        <p>
+          <button type="submit">Register</button>
+        </p>
+        <p><output>Confirmation message will appear here.</output></p>
+      </form>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have questions? Email us at community@cityevents.org</p>
+    </section>
+
+    <!-- Feedback Form Simulation -->
+    <section>
+      <h2>Feedback</h2>
+      <form>
+        <p>
+          <label for="phone">Phone Number:</label><br>
+          <input type="text" id="phone" placeholder="Enter phone number">
+        </p>
+        <p>
+          <label for="eventFee">Select Event Type to See Fee:</label><br>
+          <select id="eventFee">
+            <option>Music - $10</option>
+            <option>Art - $20</option>
+            <option>Sports - $15</option>
+          </select>
+        </p>
+        <p>
+          <label for="feedback">Your Feedback:</label><br>
+          <textarea id="feedback" placeholder="Type your feedback here"></textarea>
+        </p>
+        <p><button type="submit">Submit Feedback</button></p>
+      </form>
+    </section>
+
+    <!-- Video Invite -->
+    <section>
+      <h2>Event Promo Video</h2>
+      <video width="320" height="240" controls>
+        <source src="https://youtu.be/9vRIN8ILMHM?t=10" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Video ready to play.</p>
+    </section>
+
+    <!-- Preferences -->
+    <section>
+      <h2>User Preferences</h2>
+      <form>
+        <p>
+          <label for="prefEvent">Select Your Preferred Event Type:</label><br>
+          <select id="prefEvent">
+            <option>Music</option>
+            <option>Art</option>
+            <option>Sports</option>
+          </select>
+        </p>
+        <p>
+          <button type="button">Clear Preferences</button>
+        </p>
+      </form>
+    </section>
+
+    <!-- Geolocation -->
+    <section>
+      <h2>Find Nearby Events</h2>
+      <p><button type="button">Find Nearby Events</button></p>
+      <p>Coordinates will be shown here.</p>
+    </section>
+
+    <!-- Debugging Note -->
+    <section>
+      <h2>Debugging</h2>
+      <p>Use Chrome DevTools to inspect elements, view the console, and debug scripts.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Local Community Council</p>
+  </footer>
+
+</body>
+</html>
